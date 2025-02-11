@@ -1,0 +1,13 @@
+@use "./variables.scss";
+.about {
+    text-align: center;
+    
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        padding: 4px;
+        color: variables.$secondary-color;
+    }
+
+
+}

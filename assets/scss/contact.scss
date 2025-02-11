@@ -1,0 +1,59 @@
+@use "./variables.scss";
+
+.contact {
+    text-align: center;
+    padding: 50px;
+    max-width: 600px;
+    margin: auto;
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 8.5rem;
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            label {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            input,
+            textarea {
+                padding: 10px;
+                border: 2px solid variables.$secondary-color;
+                border-radius: 5px;
+                font-size: 1rem;
+                transition: border-color 0.3s;
+
+                &:focus {
+                    border-color: variables.$accent-color;
+                    outline: none;
+                }
+            }
+        }
+        .btn {
+            background: variables.$accent-color;
+            color: white;
+            padding: 12px;
+            border: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            &:hover {
+                background: darken(variables.$accent-color, 10%);
+            }
+        }
+    }
+
+}
